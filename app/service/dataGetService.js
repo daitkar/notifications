@@ -1,5 +1,6 @@
 
-app.service('dataGetService', function ($q, $http, toaster, $timeout) {
+angular.module('data',[])
+.service('dataGetService', function ($q, $http, toaster, $timeout) {
 
     var data = this;
     data.collectData = function () {
@@ -23,7 +24,7 @@ app.service('dataGetService', function ($q, $http, toaster, $timeout) {
     }
     data.waiting = function (msg, timeout) {
         toaster.pop('wait', "wait", msg, timeout);
-    }
+    }s
 
     data.popups = function (data) {
         console.log("data", data);

@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>curd application for ansh</title>
-    <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angularjs-toaster/2.1.0/toaster.js"></script>
     <script src="http://code.angularjs.org/1.4.2/angular-animate.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="assets/StyleSheet.css" rel="stylesheet" />
-    <script src="./app.js"></script>
-    <script src="./component/linkOne/linkOne.js"></script>
     <script src="./service/dataGetService.js"></script>
+    <script src="./app.js"></script>
+    <script src="component/linkOne/notification.js"></script>
+
 </head>
 <body ng-app="app">
             <div class="container">
@@ -19,17 +20,7 @@
                 <h1 class="col-md-4" ui-sref="linkOne">notification</h1>
             </div>
                 <div class="row">
-                    <toaster-container toaster-options="{'close-button':true,
-                       'showEasing': 'swing',
-                             'hideEasing': 'linear',
-                                'showMethod': 'fadeIn',
-                                 'hideMethod': 'fadeOut',
-                       'time-out':{ 'toast-warning': 2000, 'toast-error': 0 } }"></toaster-container>
 
-
-                    <script type="text/ng-template" id="myTemplateWithData.html">
-                        <p> {{toaster.data}}</p>
-                    </script>
                     <div ui-view> </div>
                 </div>
 
