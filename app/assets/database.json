@@ -1,0 +1,19 @@
+{
+  "success":{
+    "status": "success",
+    "msg": "Data is upto date",
+    "timeout": 2500
+  },
+ "error": {
+    "status": "error",
+    "msg": "Data is not in proper format",
+    "timeout": 2500
+  },
+  "wait": {
+    "status": "wait",
+    "msg": "data is renderring",
+    "timeout": 2500
+  }
+}
+
+
