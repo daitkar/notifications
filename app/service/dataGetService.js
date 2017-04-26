@@ -24,7 +24,7 @@ angular.module('data',[])
     }
     data.waiting = function (msg, timeout) {
         toaster.pop('wait', "wait", msg, timeout);
-    }s
+    }
 
     data.popups = function (data) {
         console.log("data", data);
